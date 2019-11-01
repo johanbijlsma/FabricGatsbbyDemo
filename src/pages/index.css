@@ -28,3 +28,9 @@ html,
 #___gatsby {
   height: 100%;
 }
+
+img {
+  flex-grow: 0;
+  width: 200px;
+  margin: 10px auto;
+}

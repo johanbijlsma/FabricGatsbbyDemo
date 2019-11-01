@@ -5,13 +5,12 @@ export const NavBasicExample: React.FunctionComponent = () => {
   return (
     <Nav
       onLinkClick={_onLinkClick}
-      selectedKey="key3"
+      selectedKey="props.selectedKey"
       selectedAriaLabel="Selected"
       ariaLabel="Nav basic example"
       styles={{
         root: {
           width: 208,
-          height: 350,
           boxSizing: "border-box",
           border: "1px solid #eee",
           overflowY: "auto",
@@ -25,11 +24,12 @@ export const NavBasicExample: React.FunctionComponent = () => {
               url: "/",
               expandAriaLabel: "Expand Home section",
               collapseAriaLabel: "Collapse Home section",
+              key: "key1",
             },
             {
               name: "Blog",
               url: "/blog",
-              key: "key3",
+              key: "key2",
             },
           ],
         },
