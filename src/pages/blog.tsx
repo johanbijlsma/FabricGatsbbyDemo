@@ -3,9 +3,8 @@ import { Stack, Text, Link, FontWeights } from "office-ui-fabric-react"
 import "./index.css"
 import logo from "./fabric.png"
 const boldStyle = { root: { fontWeight: FontWeights.semibold } }
-import NavBasicExample from "./../components/nav"
 
-const App: React.FunctionComponent = () => {
+const Blog: React.FunctionComponent = () => {
   return (
     <Stack
       horizontalAlign="center"
@@ -16,13 +15,13 @@ const App: React.FunctionComponent = () => {
           width: "960px",
           margin: "0 auto",
           textAlign: "center",
-          color: "#605e5c",
+          color: "lime",
+          backgroundColor: "#999",
         },
       }}
       className="App"
       gap={15}
     >
-      <NavBasicExample />
       <img src={logo} alt="logo" />
       <Text variant="xxLarge" styles={boldStyle}>
         Welcome to Your UI Fabric App
@@ -58,9 +57,8 @@ const App: React.FunctionComponent = () => {
           Theme
         </Link>
       </Stack>
-      <Link href="/blog">Link to my awesome blog 🎉</Link>
     </Stack>
   )
 }
 
-export default App
+export default Blog
