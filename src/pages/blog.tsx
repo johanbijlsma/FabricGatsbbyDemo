@@ -20,10 +20,10 @@ const Blog: React.FunctionComponent = () => {
       className="App"
       gap={15}
     >
-      <Stack.Item grow={1}>
+      <Stack wrap>
         <NavBasicExample selectedKey="key2" />
-      </Stack.Item>
-      <Stack.Item grow={2}>
+      </Stack>
+      <Stack wrap>
         <Stack>
           <img src={logo} alt="logo" />
           <Text variant="xxLarge" styles={boldStyle}>
@@ -63,7 +63,7 @@ const Blog: React.FunctionComponent = () => {
             </Link>
           </Stack>
         </Stack>
-      </Stack.Item>
+      </Stack>
     </Stack>
   )
 }
